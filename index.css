@@ -10,3 +10,7 @@ body {
 .fa-anchor,.fa-coffee,.fa-git{
     font-size: 200px;
 }
+
+a:active{
+    color: 	white;
+}
