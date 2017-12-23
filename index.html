@@ -40,7 +40,7 @@
     <a href="#link4" class="w3-bar-item w3-button w3-padding-large">Création</a>
     <a href="#link5" class="w3-bar-item w3-button w3-padding-large">Capacités</a>
     <a href="#link6" class="w3-bar-item w3-button w3-padding-large">Survie</a>
-    <a href="#link6" class="w3-bar-item w3-button w3-padding-large">Sources</a>
+    <a href="#link7" class="w3-bar-item w3-button w3-padding-large">Sources</a>
   </div>
 </div>
 
@@ -58,14 +58,14 @@ style="padding:128px 16px; background:url(https://images.pexels.com/photos/12758
 <!-- Link 1 -->
 <!-- 1 introduction -->
 <div id="link1" class="w3-container w3-pale-blue w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-jumbo">Quels types de sables mouvants existe-il ?</h1>
+    <h1 class="w3-margin w3-jumbo">Quels types de sables mouvants existent-ils ?</h1>
 </div>
 
 <!-- First Grid -->
 <div id="Grid1" class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>Les sables mouvants "classiques"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -84,7 +84,7 @@ style="padding:128px 16px; background:url(https://images.pexels.com/photos/12758
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
+      <h1>Les sables mouvants "mouillés"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -98,7 +98,7 @@ style="padding:128px 16px; background:url(https://images.pexels.com/photos/12758
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>Les sables mouvants "secs"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -111,26 +111,25 @@ style="padding:128px 16px; background:url(https://images.pexels.com/photos/12758
 <!-- Link 2 -->
 <!-- 2 Introduction -->
 <div id="link2" class="w3-container w3-sand w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-jumbo">où se trouve ses sables mouvants ?</h1>
+    <h1 class="w3-margin w3-jumbo">Où se trouve ses sables mouvants ?</h1>
 </div>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>Localisation de sables mouvants "classiques"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-  </div>
 </div>
-
-<div id="googleMap" style="width:100%;height:400px;"></div>
+</div>
+<div id="googleMap1" style="width:100%;height:400px;"></div>
 <script>
-function myMap()
+function myMap1()
 {
   myCenter=new google.maps.LatLng(48.636017,-1.511114);
   var mapOptions= {
@@ -138,7 +137,7 @@ function myMap()
     zoom:12, scrollwheel: false, draggable: false,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var map=new google.maps.Map(document.getElementById("googleMap1"),mapOptions);
 
   var marker = new google.maps.Marker({
     position: myCenter,
@@ -146,11 +145,10 @@ function myMap()
   marker.setMap(map);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhkyL90U6RP1LoGoFKuu9Fcp73n0-hypc&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUCutSMvbZiKICmkcmGSFlK5TMTc43bKY&callback=myMap1"></script>
 <!-- insérer une page de google map -->
 
- <div class="w3-center">
-  <!-- Pagination -->
+<!--<div class="w3-center">
   <div class="w3-right w3-padding-32">
     <div class="w3-bar">
       <a href="#Grid1" class="w3-bar-item w3-button w3-hover-theme">«</a>
@@ -161,6 +159,7 @@ function myMap()
     </div>
   </div>
 </div>
+-->
 
 <!-- forme pour les exemples qui défile il manque qql chose pour faire differentes pages pour differents exemples -->
 
@@ -172,32 +171,51 @@ function myMap()
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
+      <h1>Localisation de sables mouvants "mouillés"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+   </div>
   </div>
-</div>
+<div id="googleMap2" style="width:100%;height:400px;"></div>
+<script>
+function myMap2()
+{
+  myCenter=new google.maps.LatLng(37.902552,139.023095);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap2"),mapOptions);
 
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_jvDSLThuT2gKCz2ShLSwbQmfaIkJOxg&callback=myMap2"></script>
+<!-- insérer une page de google map -->
 
 
 <!-- Third Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>Localisation de sables mouvants "secs"</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+   </div>
   </div>
-</div>
- 
+
 
 
 <!-- Link 3 -->
@@ -210,7 +228,7 @@ function myMap()
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>De sable</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -221,19 +239,14 @@ function myMap()
 	<img src="Sable.m.jpg" alt="microscope sable">
 	<img src="Sable.o.jpg" alt="observation sable">
 	</p>
-                <!-- error d'orientation -->
   </div>
 </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
+      <h1>D'argile</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -251,7 +264,7 @@ function myMap()
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
+      <h1>D'eau salé</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -262,7 +275,7 @@ function myMap()
 	<img src="Sel.m.jpg" alt="sel microscope">
 	<img src="Sel.o.jpg" alt="sel observation">
 	</p>
-  </div>
+  </div>  <!-- ajout de la molécule d'eau -->
 </div>
 
 
@@ -276,12 +289,57 @@ function myMap()
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+<h1>Création de notre sable mouvant</h1>
+<h5>Problématique :</h5>
+<h5>	Comment créer son sable mouvant ?</h5>
+<h5>Hypothèse :</h5>
+<h5>	Nous pensons que pour créer un sable mouvant il nous suffit de sable ainsi que d’un fluide dans ce cas ci de l’eau salée.</h5>
+<h5>Protocole :</h5>
+<h5>*Matériels :</h5> 
+<h5>	bécher de 1000 mL, sable fin (possibilité de plusieurs diamètres → tamis), eau salée, argile (possibilité de différents types : verte, smectite et montmorillonite)
+(possibilité d’une plaque chauffante pour une dilution plus efficace)</h5> 
+<!--photo ou image du matériel-->
+<h5>*Étapes de l’expérience :</h5> 
+<h5>	-Tout d’abord nous aurons besoins des ingrédients suivants : 250 mL d’eau salée (soit avec 90 g de sel dilué), 200 g de sable fin et 50 g d’argile.
+Nous commençons d’abord par introduire du sable, soit environ deux bonne cuillère a soupe, au fond du bécher, ensuite nous y ajoutons de l’argile et de l’eau salée préalablement. Nous mélangeons progressivement la solution tout en ajoutant les ingrédients au fur et à mesure. Attention de ne pas noyer la solution (donc il ne faudra pas introduire toute l’eau).</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h5>Test a effectuer avant validation du sable mouvant :</h5>
+<h5>*Matériel : </h5>
+<h5> 	Gant en latex ( →  pour éviter de se salire)</h5>
+<!--image ou photo du gant-->
+<h5>*Étapes du test :</h5>
+<h5> 	-Enfoncer au maximum sa main dans le sable mouvant puis la retirer d’un coup sec.</h5>
+<h5>*Test concluant :</h5>
+<h5>	Si nous sentons une résistance lors de l’action effectuée avec la main, comme si elle était retenu.</h5>
+<h5>*Test non concluant :</h5>
+<h5>	Si nous ne sentons pas de résistance ce qui impliquerait une révision du protocole de l’expérience.</h5>
+<h5>*Résultats du test :</h5>
+<!--a compléter-->
+<!--photo du test concluant ou non-->
+
+<h5>1) Avec du sable fin + argile verte</h5> 
+<h5>Schéma de l’expérience :</h5>
+<!--schéma-->
+<h5>Observations:</h5>
+<!--photo-->
+<h5>	Nous remarquons que… (a compléter)</h5>
+<h5>Conclusion :
+<h5>	Nous en conclurons… (a compléter)</h5> 
+
+<h5>2) Avec du sable fin + argile smectite</h5>
+<h5>Schéma de l’expérience :</h5>
+<!--schéma-->
+<h5>Observations:</h5>
+<!--photo-->
+<h5>Conclusion :</h5>
+
+<h5>3) Avec du sable fin +argile montmorillonite</h5>
+<h5>Schéma de l’expérience :</h5>
+<!--schéma-->
+<h5>Observations:</h5>
+<!--photo-->
+<h5>Conclusion :</h5>
+
     </div>
   </div>
 </div>
@@ -328,19 +386,38 @@ function myMap()
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>???</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h1>Expérimentation</h1>
+<h1>La poussée d'Archimède</h1>
+<h5>Archimède biographie:</h5> 
+<!--photo d'archimède-->
+<h5>	Archimède est un physicien, mathématicien et ingénieur, il est né à Syracuse en -287 av J-C, il va très rapidement être connu pour ses découvertes scientifique. Il a apporté son savoir en géométrie mais également en mécanique. Par exemple, pour la géométrie il découvre une méthode pour calculer approximativement Pi. Il a égalament inventé dans le domaine de la mécanique les machines de guerres tels que les catapultes ou encore les machines pour tracter des objets plus lourd que son poids.</h5>
+<h5>Problématique :</h5> 
+<h5>	Qu’est ce que la poussée d’archimède ?</h5>
+<h5>Hypothèse :</h5>
+<h5>	Nous pensons que cette force est ce qui permet à un corps de flotter en fonction de la densité du corps et du fluide.</h5>
+<h5>Protocole :</h5> 
+<h5>*Matériels:</h5> 
+<h5>	bécher, eau, huile, deux ballons de baudruches</h5>
+<!--image ou photo du matériel-->
+<h5>*Étapes de l'expérience:</h5>
+<h5>	-Nous remplissons un bécher d’eau, ensuite nous remplissons un ballon d’eau et un autre d’huile et enfin nous les plaçons tous deux dans le bécher.</h5>
+<h5>Schéma de l’expérience:</h5>
+<!-- schéma -->
+<h5>Observations:</h5>
+<!--photo du résultat final-->
+<h5>	Nous noterons que le ballon remplit d’huile flotte (sur la photo, le jaune) comparer au ballon remplit d’eau qui lui est au fond du bécher (sur la photo, le violet)</h5>
+<h5>Conclusion:</h5>
+<h5>	Nous pouvons donc en conclure qu’un corps est soumis à une gravité, mais également que cela à un rapport avec la densité. En effet, nous pouvons voir que le ballon remplit d’huile (le jaune) flotte à la surface, en sachant que l’huile à une densité d’environ 0.92 tandis que le ballon remplit d’eau (le violet) va couler plus profondément que le ballon remplit d’huile. Cela s’explique par leur différence de densité, en effet l’eau à une densité de 1g/cm3, sa densité est légèrement supérieure à celle de l’huile (0.92)  ce qui explique pourquoi elle coule plus profondément.</h5>
     </div>
-</div>
-</div>
+   </div>
+  </div>
 
 <!-- Second Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
+  	 <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
     <div class="w3-twothird">
       <h1>Lorem Ipsum</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
@@ -371,7 +448,7 @@ function myMap()
 <!-- Link 6 -->
 <!-- 6 Introduction -->
 <div id="link6" class="w3-container w3-sand w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-jumbo">comment survivre à un sable mouvant ?</h1>
+    <h1 class="w3-margin w3-jumbo">Comment survivre à un sable mouvant ?</h1>
 </div>
 
 <!-- First Grid -->
