@@ -54,12 +54,38 @@ function initMaps() {
 	markerRoquebillière.setMap(mapRoquebillière);
 }
 
+// Scroll to the given ashe during the given time (ms)
+function runAnimatedScroll(hash, time) {
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  console.log('called');
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, time, () => {
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+  });
+}
 
 
 
 
+// Main code
+// C'est ce qui sera executé quand la page aura chargée
 
+// On attrape la navbar
+var $navbar = $('#navbar');
 
+// Pour chaque lien dans la navbar, quand on clic dessus on scroll jusqu'à la cible
+$navbar.find('a').on('click', function(event) {
+	console.log('clicked');
+    // Make sure this.hash has a value before overriding default behavior
+    if (event.target.hash && event.target.hash !== '') {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      runAnimatedScroll(event.target.hash, 1000);
+    }
+});
 
 
 
