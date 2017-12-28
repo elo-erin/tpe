@@ -9,8 +9,7 @@ function toggleNavMenu() {
 }
 
 // Create all Google maps and add associated markers
-function initMaps()
-{
+function initMaps() {
 	// Define coordinates
 	centerMont = new google.maps.LatLng(48.636017,-1.511114);
 	centerJapan = new google.maps.LatLng(37.902552,139.023095);
@@ -54,3 +53,64 @@ function initMaps()
 	});
 	markerRoquebillière.setMap(mapRoquebillière);
 }
+
+
+
+
+
+
+
+
+
+
+
+// --------------- Exemples de fonctions
+
+// Object (qui est défini par une classe, implicite ici)
+let erin = {
+	// Attribut (Champ)
+	nom: "Erin",
+	age: 16,
+
+	// Methode (fonction de classe)
+	sayHello: function() {
+		console.log("Hello! Je m'appelle " + this.nom + " et j'ai " + this.age + " ans.")
+	}
+}
+
+// On appelle la méthode sayHello
+erin.sayHello();	
+
+// Une fonction (une moulinette qui fait des trucs)
+function add2or3(nombre) {
+	var result = 0;
+	// Une condition: Si nombre est divisible par 2 (pair)
+	if(nombre % 2 == 0) {
+		result = nombre + 2;
+	// Sinon si c'est impair
+	} else {
+		result = nombre + 3;
+	}
+	return result;
+}
+
+// Une boucle for
+for(var i = 0; i <= 10; i++) {
+	console.log(i);
+}
+
+// Une variable (qui n'est pas un objet)
+var i = 10;
+
+// Une boucle while
+while(i > 0) {
+	console.log(i);
+	i-=2;
+}
+
+
+// Des tests...
+var test = add2or3(7);
+console.log("test = ", test);
+var test2 = add2or3(test);
+console.log("test2 = ", test2);
