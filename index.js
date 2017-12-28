@@ -14,6 +14,7 @@ function initMaps()
 	// Define coordinates
 	centerMont = new google.maps.LatLng(48.636017,-1.511114);
 	centerJapan = new google.maps.LatLng(37.902552,139.023095);
+	centerRoquebillière = new google.maps.LatLng(44.012749,7.307727);
 
 	// Define map options
 	var optionsMont = {
@@ -26,18 +27,30 @@ function initMaps()
 		zoom:12, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
+	var optionsRoquebillière = {
+		center: centerRoquebillière,
+		zoom:12, scrollwheel: false, draggable: false,
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
 
 	// Create maps
 	var mapMont = new google.maps.Map(document.getElementById("mapMont"), optionsMont);
 	var mapJapan = new google.maps.Map(document.getElementById("mapJapan"), optionsJapan);
+	var mapRoquebillière = new google.maps.Map(document.getElementById("mapRoquebillière"), optionsRoquebillière);
 
 	// Add markers
 	var markerMont = new google.maps.Marker({
 		position: centerMont,
 	});
 	markerMont.setMap(mapMont);
+
 	var markerJapan = new google.maps.Marker({
 		position: centerJapan,
 	});
 	markerJapan.setMap(mapJapan);
+
+	var markerRoquebillière = new google.maps.Marker({
+		position: centerRoquebillière,
+	});
+	markerRoquebillière.setMap(mapRoquebillière);
 }
