@@ -77,12 +77,12 @@ var $navbar = $('#navbar');
 
 // Pour chaque lien dans la navbar, quand on clic dessus on scroll jusqu'à la cible
 $navbar.find('a').on('click', function(event) {
-	console.log('clicked');
     // Make sure this.hash has a value before overriding default behavior
     if (event.target.hash && event.target.hash !== '') {
       // Prevent default anchor click behavior
       event.preventDefault();
       runAnimatedScroll(event.target.hash, 1000);
+      $('#navDemo').removeClass('w3-show');
     }
 });
 
