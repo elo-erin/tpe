@@ -87,6 +87,14 @@ $navbar.find('a').on('click', function(event) {
     }
 });
 
+// On ajoute un espion qui regarde quand on rentre dans un élément de menu,
+// Pour mettre à jour l'apparance de la barre de menu
+var $navItems = $('.nav-item');
+$navItems.on('scrollSpy:enter', function() {
+	$navbar.find('.active').removeClass('active');
+	$navbar.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+});
+$navItems.scrollSpy();
 
 
 
