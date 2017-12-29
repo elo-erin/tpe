@@ -21,3 +21,11 @@ a: active {
 	right: 10px;
 	z-index: 100;
 }
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right !important;
+}
