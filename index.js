@@ -58,7 +58,6 @@ function initMaps() {
 function runAnimatedScroll(hash, time) {
   // Using jQuery's animate() method to add smooth page scroll
   // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  console.log('called');
   $('html, body').animate({
     scrollTop: $(hash).offset().top
   }, time, () => {
@@ -95,6 +94,14 @@ $navItems.on('scrollSpy:enter', function() {
 	$navbar.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
 });
 $navItems.scrollSpy();
+
+// Ca c'est pour enlever la selection sur le premier élément de la barre de menu
+// quand on arrive sur le header
+var $header = $('header');
+$header.on('scrollSpy:enter', function() {
+	$navbar.find('.active').removeClass('active');
+});
+$header.scrollSpy();
 
 
 
