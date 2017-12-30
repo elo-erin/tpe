@@ -13,7 +13,7 @@ function initMaps() {
 	// Define coordinates
 	centerMont = new google.maps.LatLng(48.636017,-1.511114);
 	centerJapan = new google.maps.LatLng(37.902552,139.023095);
-	centerRoquebillière = new google.maps.LatLng(44.012749,7.307727);
+	centerSahara = new google.maps.LatLng(23.416203,25.66283);
 
 	// Define map options
 	var optionsMont = {
@@ -26,8 +26,8 @@ function initMaps() {
 		zoom:12, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
-	var optionsRoquebillière = {
-		center: centerRoquebillière,
+	var optionsSahara = {
+		center: centerSahara,
 		zoom:12, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
@@ -35,7 +35,7 @@ function initMaps() {
 	// Create maps
 	var mapMont = new google.maps.Map(document.getElementById("mapMont"), optionsMont);
 	var mapJapan = new google.maps.Map(document.getElementById("mapJapan"), optionsJapan);
-	var mapRoquebillière = new google.maps.Map(document.getElementById("mapRoquebillière"), optionsRoquebillière);
+	var mapSahara = new google.maps.Map(document.getElementById("mapSahara"), optionsSahara);
 
 	// Add markers
 	var markerMont = new google.maps.Marker({
@@ -48,10 +48,10 @@ function initMaps() {
 	});
 	markerJapan.setMap(mapJapan);
 
-	var markerRoquebillière = new google.maps.Marker({
-		position: centerRoquebillière,
+	var markerSahara = new google.maps.Marker({
+		position: centerSahara,
 	});
-	markerRoquebillière.setMap(mapRoquebillière);
+	markerSahara.setMap(mapSahara);
 }
 
 // Scroll to the given ashe during the given time (ms)
