@@ -11,6 +11,10 @@ body {
     font-size: 200px;
 }
 
+.fa-github{
+	font-size: 100px;
+}	
+
 a: active {
     color: 	white;
 }
