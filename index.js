@@ -18,17 +18,17 @@ function initMaps() {
 	// Define map options
 	var optionsMont = {
 		center: centerMont,
-		zoom:12, scrollwheel: false, draggable: false,
+		zoom:8, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
 	var optionsJapan = {
 		center: centerJapan,
-		zoom:12, scrollwheel: false, draggable: false,
+		zoom:8, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
 	var optionsSahara = {
 		center: centerSahara,
-		zoom:12, scrollwheel: false, draggable: false,
+		zoom:6, scrollwheel: false, draggable: false,
 		mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
 
